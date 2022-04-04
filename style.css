@@ -120,41 +120,6 @@ form.sign-in-form {
   background-color: #4d84e2;
 }
 
-.container:before {
-  content: "";
-  position: absolute;
-  height: 2000px;
-  width: 2000px;
-  top: -10%;
-  right: 48%;
-  transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
-  transition: 1.8s ease-in-out;
-  border-radius: 50%;
-  z-index: 6;
-}
-
-
-/* ANIMATION */
-
-.container.sign-up-mode:before {
-  transform: translate(100%, -50%);
-  right: 52%;
-}
-.container.sign-up-mode .signin-signup {
-  left: 25%;
-}
-
-.container.sign-up-mode form.sign-up-form {
-  opacity: 1;
-  z-index: 2;
-}
-
-.container.sign-up-mode form.sign-in-form {
-  opacity: 0;
-  z-index: 1;
-}
-
 @media (max-width: 870px) {
   .container {
     min-height: 800px;
@@ -215,11 +180,11 @@ form.sign-in-form {
   }
 }
 small{
- font-size: x-small;
+    font-size: x-small;
 }
 .error{
- color: red;
+    color: red;
 }
 .success{
- visibility: hidden;
+    visibility: hidden;
 }

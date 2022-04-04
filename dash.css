@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  font-weight: 500;
+  
+}
+.nav-link:hover{
+ background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+ border: none;
+ outline: none;
+ border-radius: 49px;
+ cursor: pointer;
+ transition: 0.5s;
+ max-width:max-content;
+}

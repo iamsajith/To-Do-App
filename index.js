@@ -1,19 +1,19 @@
 const form = document.getElementById('smt');
-const email = document.getElementById('email');
+const username = document.getElementById('username');
 const password = document.getElementById('password');
 var count = 0
 
 function checkInputs() {
-	const emailValue = email.value.trim();
+	const userValue = username.value.trim();
 	const passwordValue = password.value.trim();
 
 
-if(emailValue === '') { 
+if(userValue === '') { 
  console.log('no-blank')
- setErrorFor1('Email cannot be blank');
-} else if (!isEmail(emailValue)) {
+ setErrorFor1('Username cannot be blank');
+} else if (userValue != 'admin') {
  console.log('not-valid')
- setErrorFor1('Not a valid email');
+ setErrorFor1('Username is not found');
 } else {
  setSuccessFor1();
  count = 0
@@ -22,7 +22,7 @@ if(emailValue === '') {
 if(passwordValue === '') {
  setErrorFor2('Password cannot be blank');
 }
- else if(!isPassword(passwordValue)){ 
+ else if(passwordValue != "12345"){ 
    setErrorFor2('Not a valid password');
  }
  else{
@@ -40,12 +40,12 @@ else{
 
 }
 
-function isEmail(email) {
-	return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
-}
-function isPassword(password){
- return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(password)
-}
+// function isEmail(email) {
+// 	return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+// }
+// function isPassword(password){
+//  return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(password)
+// }
 var setErrorFor1 = (message)=>{
  const formControl = document.getElementsByTagName('small')[0];
 	formControl.classList.add('error');
