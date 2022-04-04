@@ -3,7 +3,7 @@ const username = document.getElementById('username');
 const password = document.getElementById('password');
 var count = 0
 
-function checkInputs() {
+var checkInputs = (callback)=> {
 	const userValue = username.value.trim();
 	const passwordValue = password.value.trim();
 
@@ -29,23 +29,21 @@ if(passwordValue === '') {
  setSuccessFor2();
  count += 1
  console.log(count)
-}
-if (count == 2){
- alert('You are logged in')
- return true
-}
-else{
- return false
-}
+};
+var out = callback();
+return out;
 
 }
+var redirect=()=>{
+	if (count == 2){
+		alert('You are logged in')
+		return true
+	}
+	else{
+		return false
+	}
+}
 
-// function isEmail(email) {
-// 	return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
-// }
-// function isPassword(password){
-//  return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(password)
-// }
 var setErrorFor1 = (message)=>{
  const formControl = document.getElementsByTagName('small')[0];
 	formControl.classList.add('error');
