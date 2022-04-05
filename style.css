@@ -100,7 +100,6 @@ form.sign-in-form {
   font-weight: 500;
 }
 
-
 .btn {
   width: 150px;
   background-color: #5995fd;
@@ -136,7 +135,6 @@ form.sign-in-form {
   .container.sign-up-mode .signin-signup {
     left: 50%;
   }
-
 
   .container:before {
     width: 1500px;
@@ -179,12 +177,12 @@ form.sign-in-form {
     left: 50%;
   }
 }
-small{
-    font-size: x-small;
+small {
+  font-size: x-small;
 }
-.error{
-    color: red;
+.error {
+  color: red;
 }
-.success{
-    visibility: hidden;
+.success {
+  visibility: hidden;
 }
