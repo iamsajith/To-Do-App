@@ -17,12 +17,12 @@ var apiData = () => {
 };
 var count = 0;
 var myFunction = () => {
-  let p = new Promise((resolve, reject) => {
+  let p = new Promise((resolve) => {
     var check = document.getElementById("check");
     if (check.checked == true) {
       count += 1;
       if (count == 5) {
-        resolve("Success");
+        resolve("Five Tasks have been Successfully Completed");
       }
       console.log(count);
     } else {

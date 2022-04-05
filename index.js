@@ -32,7 +32,6 @@ var checkInputs = (callback) => {
 };
 var redirect = () => {
   if (count == 2) {
-    alert("You are logged in");
     return true;
   } else {
     return false;
