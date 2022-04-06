@@ -147,12 +147,6 @@ form.sign-in-form {
     transition: 2s ease-in-out;
   }
 
-  .container.sign-up-mode:before {
-    transform: translate(-50%, 100%);
-    bottom: 32%;
-    right: initial;
-  }
-
   .container.sign-up-mode .signin-signup {
     top: 5%;
     transform: translate(-50%, 0);
@@ -169,11 +163,6 @@ form.sign-in-form {
 
   .container:before {
     bottom: 72%;
-    left: 50%;
-  }
-
-  .container.sign-up-mode:before {
-    top: 28%;
     left: 50%;
   }
 }
